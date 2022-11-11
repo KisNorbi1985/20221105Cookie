@@ -20,22 +20,59 @@ body{
 }
 #header{
     height: 360px;
-    background:url(../pics/bg-header.jpg)
+    background:url(../pics/bg-header.jpg);
+    position: relative;
+}
+#header>ul{
+    background-color: rgba(200,0,0,.8);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
 }
 #header>ul>li{
     float: left;
 }
-#header>ul>li a{
+#header>ul>li>a{
     color: white;
     text-decoration: none;
     padding: 20px;
     display: block;
 }
-#header>ul{
-    background-color: rgba(200,0,0,.7);
+#header ul li a:hover{
+    background-color: #16171b;
 }
+
 #header ul::after{
     content:'';
     clear: both;
     display: table;
+}
+.submenu{
+    position: absolute;
+    background-color: rgb(200,0,0);
+    width: 180px;
+    display: none;
+}
+.submenu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+#header .has-submenu{
+    position: relative;
+}
+#header .has-submenu:hover .submenu{
+    display: block;
+}
+#header .has-submenu::after{
+    content: '🢓';
+    color: white;
+    position: absolute;
+    top: 24px;
+    right: 10px;
+}
+#header .has-submenu>a{
+    padding-right: 35px;
 }
