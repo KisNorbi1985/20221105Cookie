@@ -76,3 +76,48 @@ body{
 #header .has-submenu>a{
     padding-right: 35px;
 }
+#content{
+    background-color: white;
+    padding: 30px;
+}
+#content p{
+    padding: 15px 0;
+    line-height: 1.5;
+}
+#content h1{
+    padding: 15px 0;
+}
+#content h2{
+    padding: 10px 0;
+}
+#cookie-accept{
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+#cookie-accept span{
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#cookie-accept span:hover{
+    background-color: red;
+    color: white;
+}
+#box{
+    display: none;
+}
+#box:checked~#cookie-accept{
+    display: none;
+
+}
